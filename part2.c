@@ -58,6 +58,8 @@ void execute_ecall(Processor *p, Byte *memory) {
 
 void execute_branch(Instruction instruction, Processor *processor) {
     int branchaddr;
+    /* Remember that the immediate portion of branches
+       is counting half-words, so make sure to account for that. */
     switch (/* What do we switch on? */) {
         /* YOUR CODE HERE */
         default:
@@ -87,6 +89,8 @@ void execute_store(Instruction instruction, Processor *processor, Byte *memory) 
 }
 
 void execute_jal(Instruction instruction, Processor *processor) {
+	/* Remember that the immediate and offset are counting half-words.
+	   So make sure to plan accordingly to accomodate that. */
     int nextPC;
     /* YOUR CODE HERE */
 }
