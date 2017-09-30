@@ -20,7 +20,7 @@ void write_ecall(Instruction);
 
 void decode_instruction(Instruction instruction) {
     /* YOUR CODE HERE: COMPLETE THE SWITCH STATEMENTS */
-    switch(/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
     	default: // undefined opcode
             handle_invalid_instruction(instruction);
@@ -29,7 +29,7 @@ void decode_instruction(Instruction instruction) {
 }
 
 void write_rtype(Instruction instruction) {
-	switch (/* What do we switch on? */) {
+	switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
 	    default:
             handle_invalid_instruction(instruction);
@@ -39,7 +39,8 @@ void write_rtype(Instruction instruction) {
 
 void write_itype_except_load(Instruction instruction) {
     int shiftOp;
-    switch (/* What do we switch on? */) {
+    shiftOp = -1;
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -48,7 +49,7 @@ void write_itype_except_load(Instruction instruction) {
 }
 
 void write_load(Instruction instruction) {
-    switch (/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -57,7 +58,7 @@ void write_load(Instruction instruction) {
 }
 
 void write_store(Instruction instruction) {
-    switch (/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -66,7 +67,7 @@ void write_store(Instruction instruction) {
 }
 
 void write_branch(Instruction instruction) {
-    switch (/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);

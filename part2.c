@@ -15,7 +15,7 @@ void execute_lui(Instruction, Processor *);
 
 void execute_instruction(Instruction instruction,Processor *processor,Byte *memory) {    
     /* YOUR CODE HERE: COMPLETE THE SWITCH STATEMENTS */
-    switch(/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default: // undefined opcode
             handle_invalid_instruction(instruction);
@@ -25,7 +25,7 @@ void execute_instruction(Instruction instruction,Processor *processor,Byte *memo
 }
 
 void execute_rtype(Instruction instruction, Processor *processor) {
-    switch (/* What do we switch on? */){
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -36,7 +36,8 @@ void execute_rtype(Instruction instruction, Processor *processor) {
 
 void execute_itype_except_load(Instruction instruction, Processor *processor) {
     int shiftOp;
-    switch (/* What do we switch on? */) {
+    shiftOp = -1;
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -45,12 +46,10 @@ void execute_itype_except_load(Instruction instruction, Processor *processor) {
 }
 
 void execute_ecall(Processor *p, Byte *memory) {
-    Register i;
-
-    switch(/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default: // undefined ecall
-            printf("Illegal ecall number %d\n", /* What stores the ecall arg? */);
+            printf("Illegal ecall number %d\n", -1); // What stores the ecall arg?
             exit(-1);
             break;
     }
@@ -58,9 +57,10 @@ void execute_ecall(Processor *p, Byte *memory) {
 
 void execute_branch(Instruction instruction, Processor *processor) {
     int branchaddr;
+    branchaddr = 0;
     /* Remember that the immediate portion of branches
        is counting half-words, so make sure to account for that. */
-    switch (/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -70,7 +70,7 @@ void execute_branch(Instruction instruction, Processor *processor) {
 }
 
 void execute_load(Instruction instruction, Processor *processor, Byte *memory) {
-    switch (/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -79,7 +79,7 @@ void execute_load(Instruction instruction, Processor *processor, Byte *memory) {
 }
 
 void execute_store(Instruction instruction, Processor *processor, Byte *memory) {
-    switch (/* What do we switch on? */) {
+    switch(0) { // What do we switch on?
         /* YOUR CODE HERE */
         default:
             handle_invalid_instruction(instruction);
@@ -92,11 +92,13 @@ void execute_jal(Instruction instruction, Processor *processor) {
 	/* Remember that the immediate and offset are counting half-words.
 	   So make sure to plan accordingly to accomodate that. */
     int nextPC;
+    nextPC = 0;
     /* YOUR CODE HERE */
 }
 
 void execute_lui(Instruction instruction, Processor *processor) {
     int imm;
+    imm = 0;
     /* YOUR CODE HERE */  
 }
 
@@ -132,7 +134,7 @@ Word load(Byte *memory,Address address,Alignment alignment, int check_align) {
     
     /* YOUR CODE HERE */
     uint32_t data = 0; // initialize our return value to zero
-    return data
+    return data;
 }
 
 
