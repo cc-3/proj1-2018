@@ -89,8 +89,6 @@ void execute_store(Instruction instruction, Processor *processor, Byte *memory) 
 }
 
 void execute_jal(Instruction instruction, Processor *processor) {
-	/* Remember that the immediate and offset are counting half-words.
-	   So make sure to plan accordingly to accomodate that. */
     int nextPC;
     nextPC = 0;
     /* YOUR CODE HERE */
