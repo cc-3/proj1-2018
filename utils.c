@@ -9,6 +9,8 @@ int bitSigner( unsigned int field, unsigned int size){
     return 0;
 }
 
+/* Remember that the offsets should return the offset in BYTES */
+
 int get_branch_offset(Instruction instruction) {
     /* YOUR CODE HERE */
     return 0;
